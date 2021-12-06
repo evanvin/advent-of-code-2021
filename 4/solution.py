@@ -62,19 +62,6 @@ def solution():
     # ------------------------------------------------
     # Part 1
     # ------------------------------------------------
-    # try:
-    #     for n in numbers:
-    #         for idx, b in enumerate(boards):
-    #             boards[idx] = [x if x != n else -1 for x in b]
-    #             c = is_board_winner(boards[idx])
-    #             if c:
-    #                 print(
-    #                     f"Board #{idx+1} has won on number {n}, and the final score is {c*n}."
-    #                 )
-    #                 raise BreakIt
-    # except BreakIt:
-    #     pass
-
     # ------------------------------------------------
     # Part 2
     # ------------------------------------------------
