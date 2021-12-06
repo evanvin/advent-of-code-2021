@@ -67,16 +67,14 @@ def solution():
     # ------------------------------------------------
     numbers, boards = set_up()
     winners = []
-    last_winner_score = 0
 
     for n in numbers:
-        for idx, b in enumerate(boards):
+        for idx, _ in enumerate(boards):
             if idx not in winners:
                 boards[idx] = [x if x != n else -1 for x in boards[idx]]
                 c = is_board_winner(boards[idx])
                 if c:
                     winners.append(idx)
-                    last_winner_score = c * n
                     print(
                         f"Board #{idx+1} has won on number {n}, and the final score is {c*n}. Sum of unmarked is {c}."
                     )
