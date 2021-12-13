@@ -1,6 +1,3 @@
-import copy
-
-
 def set_up():
     rows = []
 
